@@ -12,4 +12,4 @@ startserver - enters server directory and starts server
 ## Next Steps For Project
 - make executables for other os(i have wind and linux so far)
 - record video of it working
-- explain code in report/slides
+- explain code in readme and transfer to report/slides
