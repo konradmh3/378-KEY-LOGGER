@@ -3,9 +3,9 @@
  
 ## Project
 In order to replicate our keylogger there are three main components
-    - The keylogger
-    - The server
-    - The client
+- The keylogger
+- The server
+- The client
 
 - The keylogger
     - The Keylogger is the program that will be running on the victim's computer. It will be responsible for logging the keystrokes and sending them to the server via Python's requests library.
