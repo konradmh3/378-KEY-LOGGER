@@ -23,3 +23,4 @@ Both the keylogger and html page operate apart from each other and are both use 
 
 Finally we created an executable of the keylogger.py file for linux and windows by using pyinstaller with the “–onefile” option so that it can be easily downloaded and run from something, such as a malicious email without having to depend on the victim having python or any other required packages installed.
 
+ <a href="https://docs.google.com/document/d/1q-Y6kcZlnJz-eHJT5Kamd2Uzf3mGaqHb3KFeQo5es8U/edit?usp=sharing">Our report</a>
