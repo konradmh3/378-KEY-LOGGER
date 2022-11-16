@@ -23,3 +23,8 @@ In order to replicate our keylogger there are three main components
     - The html page is the page that will be use to display the keystrokes saved in the log.txt file to the attacker for demonstration purposes, however saving the key strokes to the file on the server and viewing that same file later via terminal would suffice. The html page uses javascript functions to make a request to the server to clear the log.txt file on press of the "clear log" button. The html page also uses javascript functions to make a request to the server to get the contents of the log.txt file and display it on the page.
 
 - Both the keylogger and html page operate apart from each other and are both use the server in there own unique way. The keylogger will send the keystrokes to the server and the html page will make a request to the server to get the contents of the log.txt file and display it on the page.
+
+- alias for ez push to repo
+    - git add .
+    - git commit -m "update repo"
+    - git push origin master
