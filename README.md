@@ -1,14 +1,11 @@
-# 378-KEY-LOGGER
-378 semester project
-
 ## Domain
  - http://ssh.378lab.cool:11023/
  
 ## Project
-In order to replicate our keylogger there are three main components
-    - The keylogger(keylogger.py)
-    - The server(appLog.py)
-    - The client(index.html)
+- In order to replicate our keylogger there are three main components
+    - The keylogger
+    - The server
+    - The client
 
 - The keylogger
     - The Keylogger is the program that will be running on the victim's computer. It will be responsible for logging the keystrokes and sending them to the server via Python's requests library.
@@ -22,4 +19,7 @@ In order to replicate our keylogger there are three main components
 - The html page/js functions
     - The html page is the page that will be use to display the keystrokes saved in the log.txt file to the attacker for demonstration purposes, however saving the key strokes to the file on the server and viewing that same file later via terminal would suffice. The html page uses javascript functions to make a request to the server to clear the log.txt file on press of the "clear log" button. The html page also uses javascript functions to make a request to the server to get the contents of the log.txt file and display it on the page.
 
-- Both the keylogger and html page operate apart from each other and are both use the server in there own unique way. The keylogger will send the keystrokes to the server and the html page will make a request to the server to get the contents of the log.txt file and display it on the page.
+Both the keylogger and html page operate apart from each other and are both use the server in there own unique way. The keylogger will send the keystrokes to the server and the html page will make a request to the server to get the contents of the log.txt file and display it on the page.
+
+Finally we created an executable of the keylogger.py file for linux and windows by using pyinstaller with the “–onefile” option so that it can be easily downloaded and run from something, such as a malicious email without having to depend on the victim having python or any other required packages installed.
+
