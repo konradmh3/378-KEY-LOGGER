@@ -1,6 +1,3 @@
-## Domain
- - http://ssh.378lab.cool:11023/
- 
 ## Project
 - In order to replicate our keylogger there are three main components
     - The keylogger
