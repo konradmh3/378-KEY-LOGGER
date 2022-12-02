@@ -1,7 +1,4 @@
-## Domain
- - http://ssh.378lab.cool:11023/
- 
-## Project
+## 378 Malware Project : Key Logger
 - In order to replicate our keylogger there are three main components
     - The keylogger
     - The server
